@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Curriculum</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center><h1>Curriculum Vitae</h1></center>
+        <form action="#" method="get">
+            <section>
+                <div>
+                    <article>
+                        <fieldset>
+                            <legend><h2>Personal Data</h2></legend>
+                            <label for="dui">DUI</label>
+                            <input type="text" id="dui" name="DUI" placeholder="04813412-8" required pattern="[0-9]{8}-[0-9]{1}">
+                            <label for="first name">First Name:</label>
+                            <input type="text" id="first name" name="first name" placeholder="First Name" required>
+                            <label for="last name">Last Name:</label>
+                            <input type="text" id="last name" name="last name" placeholder="Last Name" required>
+                            <label>Gender</label>
+                            <input type="radio" id="male" name="gender" value="M" required>
+                            <label for="male">M</label>
+                            <input type="radio" id="female" name="gender" value="F" required>
+                            <label for="female">F</label>
+                            <br>
+                            <br>
+                            <label for="cnumber">Contact Number:</label>
+                            <input type="text" id="cnumber" name="contact number" required pattern="[0-9]{8}">
+                            <label for="birth">Birthdate:</label>
+                            <input type="date" id="birth" name="birthdate" required min="2000-01-01" max="2018-12-31">
+                            <label for="cstatus">Civil Status</label>
+                            <select name="civil status">
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                            </select>
+                            <label for="image">Image</label>
+                            <input type="file" name="image">
+                        </fieldset>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <div>
+                            <fieldset>
+                                <legend><h2>Work Experience</h2></legend>
+                                <textarea name="work experience" placeholder="Experience" cols="220" rows="10" required></textarea>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend><h2>Academic Training</h2></legend>
+                                <textarea name="work experience" placeholder="Academic Training" cols="220" rows="10" required></textarea>
+                            </fieldset>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <fieldset>
+                            <legend><h2>Further Training</h2></legend>
+                            <div>
+                               <article>
+                                    <fieldset>
+                                        <legend><h3>Programming Languages</h3></legend>
+                                        <input type="checkbox" id="java" name="java">
+                                        <label for="java">Java</label>
+                                        <input type="checkbox" id="c#" name="c#">
+                                        <label for="c#">C#</label>
+                                        <input type="checkbox" id="python" name="python">
+                                        <label for="python">Python</label>
+                                        <input type="checkbox" id="c++" name="c++">
+                                        <label for="c++">C++</label>
+                                        <input type="checkbox" id="ruby" name="ruby">
+                                        <label for="ruby">Ruby</label>
+                                    </fieldset>
+                               </article>
+                            </div>
+                            <div>
+                                <article>
+                                    <fieldset>
+                                        <legend><h3>Web Technologies</h3></legend>
+                                        <input type="checkbox" id="html5" name="html5">
+                                        <label for="html5">HTML5</label>
+                                        <input type="checkbox" id="css" name="css">
+                                        <label for="css">CSS/CSS3</label>
+                                        <input type="checkbox" id="mcss" name="materialize css">
+                                        <label for="mcss">Materialize CSS</label>
+                                        <input type="checkbox" id="javascript" name="javascript">
+                                        <label for="javascript">Javascript</label>
+                                        <input type="checkbox" id="node.js" name="node.js">
+                                        <label for="node.js">Node.js</label>
+                                        <input type="checkbox" id="Spring MVC" name="Spring MVC">
+                                        <label for="Spring MVC">Spring MVC</label>
+                                    </fieldset>
+                                </article>
+                            </div>
+                        </fieldset>
+                    </article>
+                </div>
+                <br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Cancel">
+            </section>
+        </form>
+
+    </body>
+</html>
